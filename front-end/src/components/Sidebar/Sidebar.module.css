@@ -1,0 +1,64 @@
+.Sidebar {
+  width: 25%;
+  background: var(--sidebar-bg);
+  padding: 10px;
+  border-right: 1px solid var(--borders);
+  overflow: hidden;
+}
+
+.Sidebar h2 {
+  color: var(--placeholder);
+}
+
+.RoomsContainer {
+  height: 70%;
+  overflow-y: auto;
+}
+
+.Room {
+  padding: 10px;
+  margin: 5px 0;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  background: var(--sidebar-rooms);
+  color: var(--timestamps);
+}
+
+.Room.Active {
+  background: #007bff;
+  color: var(--text-light);
+}
+
+.NewRoom {
+  display: flex;
+  margin: 1.5rem 0rem;
+}
+
+.NewRoom input {
+  flex: 1;
+  padding: 5px;
+}
+
+.NewRoom button {
+  padding: 5px;
+}
+
+.RoomsContainer::-webkit-scrollbar {
+  width: 12px;
+}
+
+.RoomsContainer::-webkit-scrollbar-track {
+  background: var(--sidebar-bg);
+  border-radius: 10px;
+}
+
+.RoomsContainer::-webkit-scrollbar-thumb {
+  background: var(--borders);
+  border-radius: 10px;
+  border: 2px solid var(--sidebar-bg);
+}
+
+.RoomsContainer::-webkit-scrollbar-thumb:hover {
+  background: var(--button-bg);
+}

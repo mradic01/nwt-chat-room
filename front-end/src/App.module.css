@@ -1,0 +1,21 @@
+.AppContainer {
+  padding: 0.5rem 1rem;
+  overflow: hidden;
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+}
+
+.App {
+  width: 100%;
+  max-width: 90rem;
+  display: flex;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.ChatContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}

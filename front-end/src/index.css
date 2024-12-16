@@ -1,0 +1,17 @@
+:root {
+  --main-bg: #2d2d30;
+  --sidebar-bg: #252529;
+  --sent-bubble: #282a36;
+  --received-bubble: #2e243a;
+  --sidebar-rooms: #32333b;
+  --text-light: #ededed;
+  --highlight: #ff4500;
+  --button-bg: #0177ff;
+  --button-hover: #3b82f6;
+  --borders: #44475a;
+  --borders-light: #4b4c56;
+  --timestamps: #b6b6b6;
+  --placeholder: #6d6d6d;
+
+  background-color: var(--main-bg);
+}

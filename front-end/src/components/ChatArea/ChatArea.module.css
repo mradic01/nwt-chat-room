@@ -1,0 +1,97 @@
+.ChatArea {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+  background: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%231A1A1D'/%3E%3Cpath d='M20,20 L30,10 L40,20 L30,30 Z' fill='%23333333'/%3E%3Ccircle cx='70' cy='30' r='5' fill='%23444444'/%3E%3Cpath d='M50,70 L60,60 L70,70 L60,80 Z' fill='%23333333'/%3E%3Ccircle cx='30' cy='70' r='5' fill='%23444444'/%3E%3C/svg%3E")
+    repeat;
+  color: var(--text-light);
+}
+
+.Messages {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  overflow-y: auto;
+}
+
+.Message {
+  display: inline-block;
+  min-width: 15%;
+  max-width: 50%;
+  width: fit-content;
+  margin: 0.5rem 0;
+  padding: 0px 14px 6px 14px;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  word-wrap: break-word;
+}
+
+.Message.Sent {
+  background: var(--sent-bubble);
+  color: var(--text-light);
+  margin-left: auto;
+}
+
+.Message.Received {
+  background: var(--received-bubble);
+  color: var(--text-light);
+  margin-right: auto;
+}
+
+.Timestamp {
+  font-size: 0.7rem;
+  font-style: italic;
+  color: var(--timestamps);
+}
+
+.Timestamp.Sent {
+  text-align: left;
+}
+
+.Timestamp.Received {
+  text-align: right;
+}
+
+.InputArea {
+  display: flex;
+  padding: 10px;
+  background: #f0f0f0;
+}
+
+.InputArea input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.InputArea button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  background: var(--button-bg);
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.Messages::-webkit-scrollbar {
+  width: 12px;
+}
+
+.Messages::-webkit-scrollbar-track {
+  background: var(--sidebar-bg);
+  border-radius: 10px;
+}
+
+.Messages::-webkit-scrollbar-thumb {
+  background: var(--borders);
+  border-radius: 10px;
+  border: 2px solid var(--sidebar-bg);
+}
+
+.Messages::-webkit-scrollbar-thumb:hover {
+  background: var(--button-bg);
+}

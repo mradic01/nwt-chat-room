@@ -1,0 +1,16 @@
+.Header {
+  background: var(--borders);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid var(--main-bg);
+}
+
+.Header h4 {
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.Header span {
+  font-size: 0.75rem;
+}
